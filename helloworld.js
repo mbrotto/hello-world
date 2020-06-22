@@ -9,25 +9,22 @@ geotab.addin.helloworld = () => {
     //     });
     // }
 
-    // let btnDisplayOutput = document.getElementById('btnDisplayOutput');
-    // let outputDiv = document.getElementById('output');
+    var btnDisplayOutput = document.getElementById('btnDisplayOutput');
+    var outputDiv = document.getElementById('output');
 
-    // btnDisplayOutput.addEventListener('click', function(){
-    //     outputDiv.innerHTML = 'Heres hoping this works';
-    // });
+    btnDisplayOutput.addEventListener('click', function(){
+        outputDiv.innerHTML = 'Heres hoping this works';
+    });
 
     return {
-     initialize(api, state, callback) {
-
-
-
-      callback();
-     },
-     focus(api, state) {
-      // User interface is available
-     },
-     blur(api, state) {
-      // Save any Add-In state
-     }
+    initialize(api, state, callback) {
+        callback();
+        },
+        focus(api, state) {
+        // User interface is available
+        },
+        blur(api, state) {
+        // Save any Add-In state
+        }
     };
-   };
+};
